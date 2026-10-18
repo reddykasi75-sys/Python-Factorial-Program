@@ -1,38 +1,15 @@
-# Student Marks Management System
+# Factorial of a Number Using Recursion
 
-print("===== STUDENT MARKS MANAGEMENT SYSTEM =====")
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:
+        return n * factorial(n - 1)
 
-name = input("Enter Student Name: ")
 
-python = float(input("Enter Python Marks: "))
-maths = float(input("Enter Maths Marks: "))
-ai = float(input("Enter AI Marks: "))
+num = int(input("Enter a number: "))
 
-total = python + maths + ai
-
-percentage = total / 3
-
-if python < 35 or maths < 35 or ai < 35:
-    grade = "Fail"
-elif percentage >= 90:
-    grade = "A+"
-elif percentage >= 75:
-    grade = "A"
-elif percentage >= 60:
-    grade = "B"
-elif percentage >= 50:
-    grade = "C"
+if num < 0:
+    print("Factorial is not defined for negative numbers.")
 else:
-    grade = "D"
-
-print("\n===== STUDENT RESULT =====")
-
-print("Student Name:", name)
-print("Total Marks:", total)
-print("Percentage:", round(percentage, 2), "%")
-print("Grade:", grade)
-
-if grade == "Fail":
-    print("Result: FAIL")
-else:
-    print("Result: PASS")
+    print("Factorial of", num, "is", factorial(num))

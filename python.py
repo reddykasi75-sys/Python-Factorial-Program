@@ -1,15 +1,8 @@
-# Factorial of a Number Using Recursion
 
-def factorial(n):
-    if n == 0 or n == 1:
-        return 1
-    else:
-        return n * factorial(n - 1)
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
+c = int(input("Enter third number: "))
 
+largest = max(a, b, c)
 
-num = int(input("Enter a number: "))
-
-if num < 0:
-    print("Factorial is not defined for negative numbers.")
-else:
-    print("Factorial of", num, "is", factorial(num))
+print("Largest number is:", largest)

@@ -1,8 +1,11 @@
 
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
-c = int(input("Enter third number: "))
 
-largest = max(a, b, c)
+import math
 
-print("Largest number is:", largest)
+r = float(input("Enter the radius of the circle: "))
+
+area = math.pi * r * r
+circumference = 2 * math.pi * r
+
+print("Area of the circle =", round(area, 2))
+print("Circumference of the circle =", round(circumference, 2))

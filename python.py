@@ -1,11 +1,9 @@
 
+length = float(input("Enter the length of the rectangle: "))
+width = float(input("Enter the width of the rectangle: "))
 
-import math
+area = length * width
+perimeter = 2 * (length + width)
 
-r = float(input("Enter the radius of the circle: "))
-
-area = math.pi * r * r
-circumference = 2 * math.pi * r
-
-print("Area of the circle =", round(area, 2))
-print("Circumference of the circle =", round(circumference, 2))
+print("Area of the rectangle =", round(area, 2))
+print("Perimeter of the rectangle =", round(perimeter, 2))

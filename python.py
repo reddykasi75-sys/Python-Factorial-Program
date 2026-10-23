@@ -1,9 +1,12 @@
 
-length = float(input("Enter the length of the rectangle: "))
-width = float(input("Enter the width of the rectangle: "))
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
 
-area = length * width
-perimeter = 2 * (length + width)
+print("Addition =", num1 + num2)
+print("Subtraction =", num1 - num2)
+print("Multiplication =", num1 * num2)
 
-print("Area of the rectangle =", round(area, 2))
-print("Perimeter of the rectangle =", round(perimeter, 2))
+if num2 != 0:
+    print("Division =", num1 / num2)
+else:
+    print("Division by zero is not possible")

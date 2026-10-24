@@ -1,8 +1,8 @@
-# Python Program to Check Even or Odd
+# Python Program to Add Two Numbers
 
-num = int(input("Enter a number: "))
+a = int(input("Enter first number: "))
+b = int(input("Enter second number: "))
 
-if num % 2 == 0:
-    print(num, "is Even")
-else:
-    print(num, "is Odd")
+sum = a + b
+
+print("Sum =", sum)
